@@ -10,7 +10,7 @@ $pierce_sum =  $mydata | Where-Object -Property County -eq "Pierce" | Where-Obje
 write-output (“The total case number in King and Pierce county as of 2020-03-17 is {0}” -f $king_sum.Sum + $pierce_sum.Sum)
 
 # Export an XML file with a limited output of the reporting
-$king-sum | Export-Clixml -Path $dir\king.xml
+$king_sum | Export-Clixml -Path $dir\king.xml
 $pierce_sum | Export-Clixml -Path $dir\pierce.xml
 
 # Describe in a paragraph another automated export task you could implement for the database, and why.

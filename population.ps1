@@ -24,6 +24,5 @@ $population_state = $mydata | Group-Object State |
 Select-Object @{Name='State';Expression={$_.Values[0]}},
               @{Name='Population';Expression={($_.Group|Measure-Object Population -Sum).Sum}} | Format-Table
 
-Write-Host $population_state
 # The result shows invalid state entries such as the ones with trailing quotation mark. 
 # Then, one can compare calculated population with published state population.
