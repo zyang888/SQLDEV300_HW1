@@ -60,6 +60,6 @@ At this point, you can use a temporary table if you wish and the AS XML, or hand
 
 ### Describe in a paragraph another automated export task you could implement for the database, and why.
 
-`Generate daily and weekly report that shows the county cases in greater details.
+Generate daily and weekly report that shows the county cases in greater details.
  - total cases, heat map with fastest case growth
- - import/export error`
+ - import/export error
